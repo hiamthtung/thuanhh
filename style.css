@@ -4,7 +4,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #2c3e50
+	background: #2c3e50;
 }
 
 .box {
@@ -63,13 +63,17 @@ body {
 		transform: scale(1);
 	}
 }
+
 .name{
- font-family: 'Parisienne'  , cursive;
+  font-family: 'Parisienne', cursive;
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em; /* Kích thước chữ lớn hơn */
   margin-top: -0.6em;
   color: white;
   text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
-  transform: rotate(-7deg);
-   z-index:1000
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-7deg); /* Căn giữa chính xác */
+  z-index: 1000;
 }
